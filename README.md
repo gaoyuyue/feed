@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+[![Build Status](https://www.travis-ci.org/gaoyuyue/feed.svg?branch=master)](https://www.travis-ci.org/gaoyuyue/feed)
+
 ## Build Setup
 
 ``` bash
