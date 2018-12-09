@@ -15,7 +15,7 @@ export function getList() {
 export function addFeedItem(text) {
   return axios({
     method: "post",
-    url: `http://${host}:${port}/add_one`,
+    url: `https://${host}:${port}/add_one`,
     contentType: "application/x-www-form-urlencoded",
     data: "content="+text,
   })
@@ -25,7 +25,7 @@ export function addFeedItem(text) {
 export function deleteOne(id) {
   return axios({
     method: "delete",
-    url: `http://${host}:${port}/delete_one?id=`+id,
+    url: `https://${host}:${port}/delete_one?id=`+id,
   })
     .catch((err) => { window.console.log(err); });
 }
@@ -33,7 +33,7 @@ export function deleteOne(id) {
 export function updateOne({ id, text }) {
   return axios({
     method: "put",
-    url: `http://${host}:${port}/update_one`,
+    url: `https://${host}:${port}/update_one`,
     contentType: "application/x-www-form-urlencoded",
     data: "id="+id+"&content="+text,
   })

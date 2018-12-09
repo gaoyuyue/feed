@@ -12,7 +12,7 @@ export default function ({
 }) {
   return axios({
     method,
-    url: `http://${host}:${port}${path}`,
+    url: `https://${host}:${port}${path}`,
     params: isRequireToken ? { ...params, ...token } : params,
   })
     .catch((err) => { window.console.log(err); });
